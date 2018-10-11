@@ -6,8 +6,8 @@
  */
 
 import * as appStrings from "_core/constants/appStrings";
-import MapWrapperOpenlayers from "_core/utils/MapWrapperOpenlayers";
-import MapWrapperCesium from "_core/utils/MapWrapperCesium";
+import MapWrapperOpenlayers from "utils/MapWrapperOpenlayers";
+// import MapWrapperCesium from "_core/utils/MapWrapperCesium";
 
 // creates a new object that abstracts a mapping library
 /**
@@ -23,8 +23,8 @@ export function createMap(type, container, mapOptions) {
     switch (type) {
         case appStrings.MAP_LIB_2D:
             return new MapWrapperOpenlayers(container, mapOptions);
-        case appStrings.MAP_LIB_3D:
-            return new MapWrapperCesium(container, mapOptions);
+        // case appStrings.MAP_LIB_3D:
+        //     return new MapWrapperCesium(container, mapOptions);
         default:
             return false;
     }

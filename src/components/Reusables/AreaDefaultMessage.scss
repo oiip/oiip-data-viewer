@@ -1,0 +1,30 @@
+/**
+ * Copyright 2018 California Institute of Technology.
+ *
+ * This source code is licensed under the APACHE 2.0 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+.root {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: darken(white, 30%);
+}
+.icon {
+    margin-left: auto;
+    margin-right: auto;
+    svg {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+.label {
+    margin-bottom: 1rem;
+}
+
+.sublabel {
+    // font-style: italic;
+}

@@ -1,0 +1,46 @@
+/**
+ * Copyright 2018 California Institute of Technology.
+ *
+ * This source code is licensed under the APACHE 2.0 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+.root {
+    padding: 1.5rem 1rem 0px 1rem;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    background: darken(white, 3%);
+}
+
+.topField {
+    width: calc(50% - 2rem);
+    margin: 0px 1rem;
+}
+
+.row {
+    .rowItem {
+        padding: 0.5rem;
+        &:last-of-type {
+            text-align: right;
+            padding-right: 1rem;
+        }
+    }
+}
+
+.facetRow {
+    composes: row;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    padding-left: 0.3rem;
+}
+
+.resultsRow {
+    composes: row;
+    padding-left: 1.8rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    .resultLabel {
+        color: lighten(#3f3f3f, 20%);
+    }
+}

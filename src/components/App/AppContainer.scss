@@ -1,0 +1,41 @@
+/**
+ * Copyright 2018 California Institute of Technology.
+ *
+ * This source code is licensed under the APACHE 2.0 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+.mapControls {
+    right: initial;
+    left: 0.7rem;
+    bottom: 7rem;
+    align-items: start;
+    transition: bottom 161ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    &.lifted {
+        bottom: 8.6rem;
+    }
+}
+
+.title {
+    display: inline-flex;
+    line-height: 4.8rem;
+    color: darken(white, 0%);
+    padding: 0px 2rem;
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+    align-items: baseline;
+}
+
+.version {
+    height: 1.2rem;
+    font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+    color: darken(white, 15%);
+    margin-left: 0.3rem;
+}
+
+.layers {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    width: 27.5rem;
+}

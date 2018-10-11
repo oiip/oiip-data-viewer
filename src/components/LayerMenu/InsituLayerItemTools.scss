@@ -1,0 +1,38 @@
+/**
+ * Copyright 2018 California Institute of Technology.
+ *
+ * This source code is licensed under the APACHE 2.0 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+.root {
+    vertical-align: middle;
+    button {
+        width: 1.8rem;
+        height: 1.8rem;
+        line-height: 1.6rem;
+        font-size: 1.6rem;
+        &[disabled] {
+            color: darken(white, 50%);
+        }
+    }
+}
+
+.content {
+    padding: 0px;
+}
+
+.toolItem {
+    min-width: 50px;
+    text-align: left;
+    justify-content: left;
+}
+
+.listItemIcon {
+    margin-right: 0px;
+    i {
+        font-size: 2rem;
+        padding-left: 1px;
+        padding-top: 0px;
+    }
+}

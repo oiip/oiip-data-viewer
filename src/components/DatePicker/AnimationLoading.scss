@@ -1,0 +1,39 @@
+@import "~styles/colors";
+
+@supports ((-webkit-text-stroke-color: $color-dark) and (-webkit-text-fill-color: $color-light)) or ((-moz-text-stroke-color: $color-dark) and (-moz-text-fill-color: $color-light)) {
+    .outline {
+        -moz-text-fill-color: $color-light;
+        -webkit-text-fill-color: $color-light;
+        -moz-text-stroke-color: $color-dark;
+        -webkit-text-stroke-color: $color-dark;
+        -moz-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+
+.root {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.spinner {
+    width: 16rem !important;
+    height: 16rem !important;
+    svg circle {
+        stroke-width: 2px;
+    }
+}
+
+.text {
+    composes: outline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    font-weight: 500;
+}

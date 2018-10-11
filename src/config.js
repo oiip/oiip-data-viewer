@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 California Institute of Technology.
+ * Copyright 2018 California Institute of Technology.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,4 +39,8 @@ APPLICATION_CONFIG = {
 
 */
 
-APPLICATION_CONFIG = {};
+APPLICATION_CONFIG = {
+    URLS: {
+        decimatorMiddleware: "https://oiip.jpl.nasa.gov/getDecData"
+    }
+};

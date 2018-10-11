@@ -1,0 +1,56 @@
+/**
+ * Copyright 2018 California Institute of Technology.
+ *
+ * This source code is licensed under the APACHE 2.0 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+.root {
+    // display: inline-flex;
+    // flex: 0 0 auto;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.content {
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+}
+
+.list {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.subheader {
+    background: white;
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: 500;
+    border-bottom: 1px solid darken(white, 10%);
+    // background: darken(white, 3%);
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 3.2rem;
+}
+
+.form {
+    padding: 1rem;
+    width: 100%;
+    // padding-left: 1rem;
+    display: block;
+    flex: 1 1;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.intervalOption {
+    text-transform: capitalize;
+}

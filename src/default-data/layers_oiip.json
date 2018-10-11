@@ -1,0 +1,174 @@
+{
+    "layers": [
+        {
+            "id": "GHRSST_L4_MUR_Sea_Surface_Temperature",
+            "title": "Sea Surface Temperature",
+            "subtitle": "GHRSST MEaSUREs MUR/PO.DAAC",
+            "isDefault": true,
+            "isDefaultSelected": true,
+            "type": "data",
+            "handleAs": "GIBS_raster",
+            "min": 0.0,
+            "max": 32.0,
+            "units": "°C",
+            "wmtsOptions": {
+                "urlFunctions": {
+                    "openlayers": "kvpTimeParam",
+                    "cesium": "kvpTimeParam"
+                }
+            },
+            "metadata": {
+                "url": "default-data/layer-metadata/GHRSST_L4_MUR_Sea_Surface_Temperature.md",
+                "handleAs": "markdown",
+                "measurement": "Sea Surface Temperature"
+            },
+            "palette": {
+                "name": "GIBS_SST",
+                "handleAs": "json-fixed"
+            }
+        },
+        {
+            "id": "oscar_l4_oc_third_deg___oceancurrent_speed___1088_x_544___daynight",
+            "title": "Ocean Surface Current Speed (5 day)",
+            "subtitle": "ESR/OSCAR",
+            "type": "data",
+            "handleAs": "GIBS_raster",
+            "min": 0.0,
+            "max": 0.5,
+            "units": "m/s",
+            "wmtsOptions": {
+                "urlFunctions": {
+                    "openlayers": "kvpTimeParam",
+                    "cesium": "kvpTimeParam"
+                }
+            },
+            "metadata": {
+                "url":
+                    "default-data/layer-metadata/oscar_l4_oc_third_deg___oceancurrent_speed___1088_x_544___daynight.md",
+                "handleAs": "markdown"
+            },
+            "palette": {
+                "name": "oceancurrent",
+                "handleAs": "json-relative"
+            }
+        },
+        {
+            "id": "oscar_l4_oc_third_deg___oceancurrent_dir_color",
+            "title": "Ocean Surface Current Vectors (5 day)",
+            "subtitle": "ESR/OSCAR",
+            "url":
+                "https://podaac-tools.jpl.nasa.gov/onearth/kml/oscar_l4_oc_third_deg___oceancurrent_dir_color/oscar_l4_oc_third_deg___oceancurrent_dir_color___1088_x_544___daynight___{TIME}/{Z}/{X}/{Y}.kml",
+            "type": "data",
+            "handleAs": "multi_file_vector_kml",
+            "timeFormat": "YYYYMMDD",
+            "min": 0.0,
+            "max": 0.5,
+            "units": "m/s",
+            "metadata": {
+                "url":
+                    "default-data/layer-metadata/oscar_l4_oc_third_deg___oceancurrent_dir_color.md",
+                "handleAs": "markdown"
+            },
+            "palette": {
+                "name": "oceancurrent",
+                "handleAs": "json-relative"
+            }
+        },
+        {
+            "id": "modis_aqua_l3_chla_daily_4km_l___chlorophyll_a___8640_x_4320___daynight",
+            "title": "Ocean Color - Chlorophyll-a",
+            "subtitle": "Aqua/MODIS",
+            "isDefaultSelected": true,
+            "type": "data",
+            "handleAs": "GIBS_raster",
+            "min": 0.01,
+            "max": 10.0,
+            "units": "mg/m\u00b3",
+            "wmtsOptions": {
+                "urlFunctions": {
+                    "openlayers": "kvpTimeParam",
+                    "cesium": "kvpTimeParam"
+                }
+            },
+            "metadata": {
+                "url":
+                    "default-data/layer-metadata/modis_aqua_l3_chla_daily_4km_l___chlorophyll_a___8640_x_4320___daynight.md",
+                "handleAs": "markdown"
+            },
+            "palette": {
+                "name": "chlorophyll_log",
+                "handleAs": "json-relative"
+            }
+        },
+        {
+            "id": "SMAP_L3_Sea_Surface_Salinity_CAP_8Day_RunningMean",
+            "title": "Sea Surface Salinity",
+            "subtitle": "SMAP/JPL",
+            "type": "data",
+            "handleAs": "GIBS_raster",
+            "min": 30.0,
+            "max": 40.0,
+            "units": "psu",
+            "wmtsOptions": {
+                "urlFunctions": {
+                    "openlayers": "kvpTimeParam",
+                    "cesium": "kvpTimeParam"
+                }
+            },
+            "metadata": {
+                "url": "default-data/layer-metadata/SMAP_JPL_L3_SSS_CAP_8DAY-RUNNINGMEAN_V4.md",
+                "handleAs": "markdown"
+            },
+            "palette": {
+                "name": "sss_obpg_255",
+                "handleAs": "json-fixed"
+            }
+        },
+        {
+            "id": "oiip:World_EEZ_v8_2014",
+            "title": "EEZ Regions",
+            "type": "data_reference",
+            "handleAs": "vector_tile_outline",
+            "updateParameters": { "time": false },
+            "thumbnailImage": "https://upload.wikimedia.org/wikipedia/en/f/fa/UNCLOS_logo.png",
+            "url": "https://oiip.jpl.nasa.gov/gwc/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&LAYER=oiip:World_EEZ_v8_2014&STYLE=&TILEMATRIX=EPSG:4326:{z}&TILEMATRIXSET=EPSG:4326&FORMAT=application/x-protobuf;type=mapbox-vector&TILECOL={x}&TILEROW={y}"
+        },
+        {
+            "id": "oiip:World_Seas",
+            "title": "IHO Regions",
+            "type": "data_reference",
+            "handleAs": "vector_tile_outline",
+            "updateParameters": { "time": false },
+            "thumbnailImage": "https://pbs.twimg.com/media/Cj8XSNiXEAA0hCi.png",
+            "url": "https://oiip.jpl.nasa.gov/gwc/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&LAYER=oiip:World_Seas&STYLE=&TILEMATRIX=EPSG:4326:{z}&TILEMATRIXSET=EPSG:4326&FORMAT=application/x-protobuf;type=mapbox-vector&TILECOL={x}&TILEROW={y}"
+        },
+        {
+            "id": "oiip:fao",
+            "title": "FAO Regions",
+            "type": "data_reference",
+            "handleAs": "vector_tile_outline",
+            "updateParameters": { "time": false },
+            "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/FAO_logo.svg/2000px-FAO_logo.svg.png",
+            "url": "https://oiip.jpl.nasa.gov/gwc/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&LAYER=oiip:fao&STYLE=&TILEMATRIX=EPSG:4326:{z}&TILEMATRIXSET=EPSG:4326&FORMAT=application/x-protobuf;type=mapbox-vector&TILECOL={x}&TILEROW={y}"
+        },
+        {
+            "id": "BlueMarble_ShadedRelief_Bathymetry",
+            "title": "Blue Marble, Shaded Relief w/Bathymetry",
+            "type": "basemap",
+            "thumbnailImage":
+                "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi?layer=BlueMarble_ShadedRelief_Bathymetry&tilematrixset=500m&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/jpeg&TileMatrix=2&TileCol=1&TileRow=1&TIME=2016-05-22",
+            "isDefault": true,
+            "handleAs": "GIBS_raster",
+            "updateParameters": { "time": false }
+        },
+        {
+            "id": "OSM_Land_Water_Map",
+            "title": "Land/Water Mask",
+            "type": "basemap",
+            "thumbnailImage":
+                "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi?layer=OSM_Land_Water_Map&tilematrixset=250m&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix=2&TileCol=1&TileRow=1&TIME=2016-05-22",
+            "handleAs": "GIBS_raster",
+            "updateParameters": { "time": false }
+        }
+    ]
+}

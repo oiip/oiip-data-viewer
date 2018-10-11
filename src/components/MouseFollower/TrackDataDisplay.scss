@@ -1,0 +1,52 @@
+/**
+ * Copyright 2018 California Institute of Technology.
+ *
+ * This source code is licensed under the APACHE 2.0 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+.root {
+    padding-bottom: 1px;
+    padding-right: 0.5rem;
+    min-width: 23.5rem;
+}
+
+.labelRow {
+    display: block;
+    position: relative;
+    margin-bottom: 0.3rem;
+}
+
+.subtitle {
+    padding-left: 1.8rem;
+}
+
+.color {
+    display: inline-block;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    margin-right: 0.7rem;
+}
+
+.label {
+    display: inline-block;
+}
+
+.paramLabel {
+    font-weight: 500;
+    padding-left: 1.8rem;
+    color: black;
+    display: block;
+}
+
+.dateLabel {
+    text-align: left;
+    margin-bottom: 0.2rem;
+}
+
+.mouseCoordinatesRoot {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.2rem;
+}

@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 California Institute of Technology.
+ * Copyright 2018 California Institute of Technology.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import React from "react";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
 import configureStore from "store/configureStore";
-import { AppContainer } from "_core/components/App"; // Replace this with your own non-core version src/components/AppContainer/AppContainer.js
+import { AppContainer } from "components/App"; // Replace this with your own non-core version src/components/AppContainer/AppContainer.js
 require("_core/styles/resources/img/apple-touch-icon.png");
 require("_core/styles/resources/img/favicon-32x32.png");
 require("_core/styles/resources/img/favicon-16x16.png");

@@ -1,0 +1,32 @@
+/**
+ * Copyright 2018 California Institute of Technology.
+ *
+ * This source code is licensed under the APACHE 2.0 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+.root {
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    z-index: 2;
+    background: darken(white, 3%);
+}
+
+.options {
+    flex-grow: 1;
+    padding-right: 1rem;
+}
+
+.chartOption {
+    margin-right: 0.7rem;
+    width: 9rem;
+    &:last-of-type {
+        margin-right: 0px;
+    }
+}
+
+.nonShared {
+    padding-top: 0.5rem;
+}

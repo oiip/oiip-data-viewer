@@ -1,0 +1,79 @@
+/**
+ * Copyright 2018 California Institute of Technology.
+ *
+ * This source code is licensed under the APACHE 2.0 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import "~styles/colors";
+
+.root {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    &:after {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        content: "";
+        position: absolute;
+        transform: scaleX(0);
+        transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+        pointer-events: none;
+        background-color: $color-primary;
+    }
+    &.active {
+        border-color: white;
+        border-bottom-left-radius: 0px;
+        &:after {
+            transform: scaleX(1);
+        }
+    }
+}
+
+.rightActions {
+    position: absolute;
+    top: 6px;
+    right: 0px;
+}
+
+.actionBtn {
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    max-width: 2rem;
+    max-height: 2rem;
+    font-size: 1.7rem;
+    margin-right: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.label {
+    flex-grow: 1;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.content {
+    padding: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}

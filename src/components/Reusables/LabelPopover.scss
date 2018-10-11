@@ -1,0 +1,40 @@
+/**
+ * Copyright 2018 California Institute of Technology.
+ *
+ * This source code is licensed under the APACHE 2.0 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+.root {
+    display: inline-block;
+    position: relative;
+}
+
+.button {
+    padding: 0px 0.5rem;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.label {
+    display: flex;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    flex-flow: row nowrap;
+    align-content: flex-start;
+    align-items: center;
+    text-transform: capitalize;
+}
+.subtitle {
+    display: block;
+    text-align: left;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content {
+    padding: 1rem;
+    max-height: 30rem;
+    overflow: hidden;
+    overflow-y: auto;
+}

@@ -1,0 +1,21 @@
+/**
+ * Copyright 2018 California Institute of Technology.
+ *
+ * This source code is licensed under the APACHE 2.0 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+.root {
+    background: white;
+}
+
+.label {
+    margin-top: 1.5rem;
+    &:first-of-type {
+        margin-top: 0px;
+    }
+}
+
+.divider {
+    margin: 0.3rem 0px;
+}

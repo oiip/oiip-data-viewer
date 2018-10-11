@@ -26,3 +26,6 @@ cp -r ./lib/mapskin ./assets/assets
 
 # Copy arc into assets
 cp -r ./lib/arc ./assets/assets
+
+# Copy highcharts into assets
+cp -r ./lib/highcharts ./assets/assets

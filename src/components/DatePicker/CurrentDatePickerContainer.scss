@@ -1,0 +1,32 @@
+.root {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0.5rem;
+}
+
+.intervalDate {
+    composes: fontRobotoMono from "_core/styles/text.scss";
+    font-size: 1.2rem;
+    padding-left: 0.6rem;
+}
+
+.inlineRow {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.picker {
+    flex: 1 1;
+}
+
+.btns {
+    width: 10rem;
+    padding: 0px;
+    display: inline-block;
+    text-align: right;
+    .thinBtn {
+        width: 16px;
+        border-radius: 2px;
+    }
+}

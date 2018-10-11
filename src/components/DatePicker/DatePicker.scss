@@ -1,0 +1,31 @@
+/**
+ * Copyright 2018 California Institute of Technology.
+ *
+ * This source code is licensed under the APACHE 2.0 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+.datePickerSelection {
+    position: relative;
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+}
+
+.inputs {
+    padding: 0.5rem 0px;
+}
+
+.inputWrapper {
+    composes: fontRobotoMono from "_core/styles/text.scss";
+    font-weight: 500;
+    padding: 3px 5px;
+    font-size: 1.4rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    &:before {
+        display: none;
+    }
+}
+
+.input {
+    padding: 0px;
+}

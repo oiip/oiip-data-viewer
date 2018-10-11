@@ -6,8 +6,8 @@
  */
 
 import { combineReducers } from "redux";
-import view from "_core/reducers/view";
-import map from "_core/reducers/map";
+import view from "reducers/view";
+import map from "reducers/map";
 import settings from "_core/reducers/settings";
 import help from "_core/reducers/help";
 import layerInfo from "_core/reducers/layerInfo";
@@ -16,6 +16,7 @@ import dateSlider from "_core/reducers/dateSlider";
 import asynchronous from "_core/reducers/async";
 import analytics from "_core/reducers/analytics";
 import alerts from "_core/reducers/alerts";
+import chart from "reducers/chart";
 import webWorker from "_core/reducers/webWorker";
 
 const rootReducer = combineReducers({
@@ -29,6 +30,7 @@ const rootReducer = combineReducers({
     asynchronous,
     analytics,
     alerts,
+    chart,
     webWorker
 });
 

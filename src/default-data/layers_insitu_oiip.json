@@ -1,0 +1,27 @@
+{
+    "layers": [{
+        "id": "albacoreTuna",
+        "title": "Albacore Tuna",
+        "type": "insitu_data",
+        "handleAs": "vector_point_track",
+        "url": "default-data/albacoreTuna.geojson",
+        "metadata": {
+            "url": "default-data/_core_default-data/layer-metadata/us_state_outline_topojson.json",
+            "handleAs": "json"
+        },
+        "timeFormat": "YYYY-MM-DDTHH:mm:ssZ",
+        "thumbnailImage": "img/us_state_outline_topojson.png"
+    },{
+        "id": "bigEyeTuna",
+        "title": "Bigeye Tuna",
+        "type": "insitu_data",
+        "handleAs": "vector_point_track",
+        "url": "default-data/bigEyeTuna.geojson",
+        "metadata": {
+            "url": "default-data/_core_default-data/layer-metadata/us_state_outline_topojson.json",
+            "handleAs": "json"
+        },
+        "timeFormat": "MM/DD/YYYY",
+        "thumbnailImage": "img/us_state_outline_topojson.png"
+    }]
+}
