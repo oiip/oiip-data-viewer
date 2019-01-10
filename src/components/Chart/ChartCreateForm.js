@@ -67,6 +67,7 @@ export class ChartCreateForm extends Component {
                             value={variable.get("label")}
                             control={<Radio color="primary" />}
                             label={variable.get("label")}
+                            className={styles.varLabel}
                         />
                     ))}
                     <FormControlLabel
