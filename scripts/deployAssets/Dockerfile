@@ -1,4 +1,4 @@
-FROM nginx:1.10.2
+FROM nginx:1.16.1
 
 
 # This Dockerfile assumes assets are pre-built and are available under `dist/`
